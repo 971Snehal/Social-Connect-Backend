@@ -13,8 +13,6 @@ app.use(cors())
 
 const PORT = process.env.PORT
 
-console.log(hello)
-
 // test api(optional)
 app.get("/test",(req,res)=>{
      res.send("hello world")
