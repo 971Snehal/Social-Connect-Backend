@@ -11,7 +11,9 @@ app.use(express.json())
 mongoConnection()
 app.use(cors())
 
-const PORT = 7000
+const PORT = process.env.PORT
+
+console.log(hello)
 
 // test api(optional)
 app.get("/test",(req,res)=>{
